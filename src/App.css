@@ -1,0 +1,245 @@
+@font-face {
+  font-family: "Inter";
+  /* src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf); */
+  src: url(../src/assets/fonts/Inter-VariableFont_slnt\wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+body {
+  background-color: hsl(36, 100%, 99%);
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+}
+header #menuBurger {
+  display: none;
+}
+header #logo {
+  width: 50%;
+}
+header #logo img {
+  padding: 10px;
+}
+header nav {
+  width: 50%;
+}
+header nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: hsl(236, 13%, 42%);
+}
+header nav ul li a:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+/* ##### fin HEADER */
+/* ##### DEBUT HERO */
+.hero {
+  /* background-color: red; */
+  width: 100%;
+  /* height: 400px; */
+  display: flex;
+}
+.left {
+  width: 80%;
+  padding: 10px;
+  /* background-color: darkcyan; */
+}
+.left .left-img img {
+  width: 100%;
+}
+.left .left-details {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  display: flex;
+}
+.left .left-details .title {
+  width: 50%;
+}
+.left .left-details .title h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+.left .left-details .side {
+  width: 50%;
+  color: hsl(236, 13%, 42%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.left .left-details .side p {
+  font-size: 15px;
+  line-height: 20px;
+}
+.left .left-details .side button {
+  width: 200px;
+  color: hsl(36, 100%, 99%);
+  border: none;
+  background-color: hsl(5, 85%, 63%);
+  padding: 15px 40px;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in;
+}
+.left .left-details .side button:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+
+/* RIGHT */
+.right {
+  /* background-color: yellow; */
+  padding: 10px 20px;
+  color: hsl(36, 100%, 99%);
+}
+.right ul li {
+  list-style: none;
+  line-height: 20px;
+}
+.right div {
+  background-color: hsl(240, 100%, 5%);
+  padding: 20px;
+  width: 300px;
+  height: 100%;
+}
+.right div h2 {
+  color: hsl(35, 77%, 62%);
+  font-size: 30px;
+}
+.right div ul {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.right ul li p {
+  color: hsl(233, 8%, 79%);
+}
+/* #########FIN HERO */
+/* ######### DEBUT LIST */
+.list {
+  /* background-color: aquamarine; */
+  width: 100%;
+  padding: 10px;
+}
+.list ul {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-between;
+}
+.list ul li {
+  list-style: none;
+  /* width: 30%; */
+  width: 400px;
+  /* height: 100px; */
+  display: flex;
+  /* background-color: blueviolet; */
+}
+.list ul li img {
+  width: 90px;
+}
+.list ul li div {
+  padding: 10px;
+}
+.list ul li h3 {
+  color: hsl(233, 8%, 79%);
+  font-size: 20px;
+}
+.list ul li h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.list ul li p {
+  color: hsl(236, 13%, 42%);
+}
+/* ####responsive */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: space-around;
+    align-items: center;
+  }
+  header nav {
+    display: none;
+  }
+  header #menuBurger {
+    display: block;
+    /* box-shadow: 5px 5px 10px hsl(236, 13%, 42%); */
+    border: 1px solid black;
+  }
+  .left .left-details .title h1 {
+    font-size: 35px;
+  }
+
+  .hero {
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+  }
+  .list ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .list ul li {
+    width: 300px;
+    margin: 10px;
+    box-shadow: 2px 2px 2px black;
+  }
+  .left .left-details {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .left .left-details .title {
+    width: 100%;
+  }
+  .left .left-details .side {
+    width: 100%;
+  }
+  .left .left-details .side p {
+    font-size: 20px;
+  }
+  .left .left-details .side button {
+    margin: 10px auto;
+  }
+  .right ul li {
+    padding: 5px;
+  }
+  .right ul li p {
+    font-size: 20px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 768px) {
+  .left .left-details .title h1 {
+    font-size: 40px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+}
