@@ -215,6 +215,7 @@ header nav ul li a:hover {
   }
   .left .left-details .side p {
     font-size: 20px;
+    text-align: justify;
   }
   .left .left-details .side button {
     margin: 10px auto;
@@ -224,6 +225,7 @@ header nav ul li a:hover {
   }
   .right ul li p {
     font-size: 20px;
+    margin: 15px 0;
   }
 }
 
