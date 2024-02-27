@@ -1,12 +1,15 @@
+import logo from "../assets/images/logo.svg";
+import burger from "../assets/images/burger.png";
+
 const Nav = () => {
   return (
     <>
       <header>
         <di id="logo">
-          <img src="../src/assets/images/logo.svg" alt="Logo W." />
+          <img src={logo} alt="Logo W." />
         </di>
         <div id="menuBurger">
-          <img src="../src/assets/images/burger.png" alt="Menu Burger" />
+          <img src={burger} alt="Menu Burger" />
         </div>
         <nav>
           <ul>

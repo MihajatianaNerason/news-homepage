@@ -1,11 +1,10 @@
+import desktop from "../assets/images/image-web-3-desktop.jpg";
+
 const Left = () => {
   return (
     <div className="left">
       <div className="left-img">
-        <img
-          src="../src/assets/images/image-web-3-desktop.jpg"
-          alt="Image desktop"
-        />
+        <img src={desktop} alt="Image desktop" />
       </div>
       <div className="left-details">
         <div className="title">

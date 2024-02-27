@@ -1,9 +1,13 @@
+import retro from "../assets/images/image-retro-pcs.jpg";
+import laptop from "../assets/images/image-top-laptops.jpg";
+import gaming from "../assets/images/image-gaming-growth.jpg";
+
 const List = () => {
   return (
     <div className="list">
       <ul>
         <li>
-          <img src="../src/assets/images/image-retro-pcs.jpg" alt="Retro PC" />
+          <img src={retro} alt="Retro PC" />
           <div>
             <h3>01</h3>
             <h4>Reviving Retro PCs</h4>
@@ -11,10 +15,7 @@ const List = () => {
           </div>
         </li>
         <li>
-          <img
-            src="../src/assets/images/image-top-laptops.jpg"
-            alt="Top laptops"
-          />
+          <img src={laptop} alt="Top laptops" />
           <div>
             <h3>02</h3>
             <h4>Top 10 Laptops of 2024</h4>
@@ -22,10 +23,7 @@ const List = () => {
           </div>
         </li>
         <li>
-          <img
-            src="../src/assets/images/image-gaming-growth.jpg"
-            alt="Gaming Growth"
-          />
+          <img src={gaming} alt="Gaming Growth" />
           <div>
             <h3>03</h3>
             <h4>The Growth of Gaming</h4>
