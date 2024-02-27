@@ -53,15 +53,12 @@ header nav ul li a:hover {
 /* ##### fin HEADER */
 /* ##### DEBUT HERO */
 .hero {
-  /* background-color: red; */
   width: 100%;
-  /* height: 400px; */
   display: flex;
 }
 .left {
   width: 80%;
   padding: 10px;
-  /* background-color: darkcyan; */
 }
 .left .left-img img {
   width: 100%;
@@ -139,22 +136,21 @@ header nav ul li a:hover {
 /* #########FIN HERO */
 /* ######### DEBUT LIST */
 .list {
-  /* background-color: aquamarine; */
   width: 100%;
   padding: 10px;
 }
 .list ul {
-  /* background-color: yellow; */
   display: flex;
   justify-content: space-between;
 }
 .list ul li {
   list-style: none;
-  /* width: 30%; */
   width: 400px;
-  /* height: 100px; */
   display: flex;
-  /* background-color: blueviolet; */
+}
+.list ul li:hover {
+  color: hsl(35, 77%, 62%);
+  box-shadow: 2px 2px 2px hsl(35, 77%, 62%);
 }
 .list ul li img {
   width: 90px;
@@ -186,7 +182,6 @@ header nav ul li a:hover {
   }
   header #menuBurger {
     display: block;
-    /* box-shadow: 5px 5px 10px hsl(236, 13%, 42%); */
     border: 1px solid black;
   }
   .left .left-details .title h1 {
@@ -195,7 +190,6 @@ header nav ul li a:hover {
 
   .hero {
     flex-wrap: wrap;
-    /* flex-direction: column; */
     justify-content: center;
   }
   .list ul {
@@ -238,8 +232,4 @@ header nav ul li a:hover {
   .left .left-details .title h1 {
     font-size: 40px;
   }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
 }
