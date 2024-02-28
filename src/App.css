@@ -229,9 +229,39 @@ header nav ul li a:hover {
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .hero {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .right div {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .right div ul li {
+    padding: 20px 0;
+    font-size: 30px;
+    line-height: 50px;
+  }
+
   .left .left-details .title h1 {
     font-size: 40px;
+  }
+
+  .list {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .list ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .list ul li {
+    margin: 20px 0px;
+    width: 97%;
+    font-size: 30px;
+    box-shadow: 2px 2px 2px black;
   }
 }
